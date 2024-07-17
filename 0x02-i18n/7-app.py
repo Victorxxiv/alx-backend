@@ -3,13 +3,10 @@
 Use user locale
 """
 
-from crypt import methods
-from email import header
 import babel
 from flask import Flask, render_template, request, g
 from flask_babel import Babel
 import pytz
-import requests
 
 app = Flask(__name__)
 babel = Babel(app)
