@@ -22,7 +22,7 @@ class Config:
 
 app.config.from_object(Config)
 
-Users = {
+users = {
     1: {"name": "Balou", "locale": "fr", "timezone": "Europe/Paris"},
     2: {"name": "Beyonce", "locale": "en", "timezone": "US/Central"},
     3: {"name": "Spock", "locale": "kg", "timezone": "Vulcan"},
