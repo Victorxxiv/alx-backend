@@ -32,7 +32,7 @@ Users = {
 
 def get_user(login_as):
     """
-    get_user.    
+    get_user.
     """
     try:
         return users.get(int(login_as))
