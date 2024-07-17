@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-parametrizing templates
+parametrize templates
 """
 
 import babel
@@ -12,7 +12,7 @@ app = Flask(__name__)
 babel = Babel(app)
 
 
-class config:
+class Config:
     """
     Config class
     """
@@ -21,7 +21,7 @@ class config:
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
-app.config.from_object(config)
+app.config.from_object(Config)
 
 
 @babel.localeselector
@@ -35,7 +35,7 @@ def get_locale():
 @app.route('/', method=['GET'], strict_slashes=False)
 def index():
     """
-    Hello world
+    hello world
     """
     return render_template('3-index.html')
 
